@@ -1,0 +1,23 @@
+{
+  "name": "node.js",
+  "version": "1.0.0",
+  "description": "NodeJS Global Mentoring Program",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bulgdm/node.js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bulgdm/node.js/issues"
+  },
+  "homepage": "https://github.com/bulgdm/node.js#readme",
+  "dependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
