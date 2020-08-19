@@ -12,7 +12,10 @@ csv()
   .fromFile(readFilePath)
   .subscribe((data) => {
     fs.appendFileSync(writeFilePath, JSON.stringify(data) + "\n", 'utf8');
-    // console.log(JSON.stringify(data));
+    console.log(`append line`,JSON.stringify(data), `to txt`);
+  })
+  .on('done',()=>{
+    console.log('DONE!')
   })
   .on('error', (err) => {
     console.log(err)
