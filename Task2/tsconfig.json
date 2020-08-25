@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "outDir": "build",
+    "removeComments": true,  
+    "esModuleInterop": true,    
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "sourceMap": false,    
+    "baseUrl": ".",
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules/*"
+  ]
+}
