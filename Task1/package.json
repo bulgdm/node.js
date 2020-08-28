@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "task1.1": "nodemon ./Task1.1/task1.1.js",
     "task1.2": "nodemon ./Task1.2/task1.2.js",
-    "task1.3": "babel-node -- ./Task1.3/task1.3.js"
+    "task1.3.1": "babel-node -- ./Task1.3/task1.3.1.js"
   },
   "repository": {
     "type": "git",
