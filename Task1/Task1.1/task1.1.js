@@ -11,7 +11,8 @@ const read = readline.createInterface({
 
 read
   .on('line', (line) => {
-    process.stdout.write(line.split('').reverse().join(''));
+    const output = line.split('').reverse().join('') + "\n";
+    process.stdout.write(output);
   })
   .on('close', () => {
     process.stdout.write('Goodbye!');
