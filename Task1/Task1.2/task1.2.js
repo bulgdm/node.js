@@ -8,11 +8,11 @@ const writeFilePath = HOME + '/txt/example.txt';
 // clear the output file
 fs.writeFileSync(writeFilePath, '');
 
-csv()
+csv({ignoreColumns: /amount/ig})
   .fromFile(readFilePath)
   .subscribe((data) => {
     fs.appendFileSync(writeFilePath, JSON.stringify(data) + "\n", 'utf8');
-    console.log(`append line`,JSON.stringify(data), `to txt`);
+    // console.log(`append line`,JSON.stringify(data), `to txt`);
   })
   .on('done',()=>{
     console.log('DONE!')
