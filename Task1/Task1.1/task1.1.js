@@ -5,15 +5,15 @@ const readline = require('readline');
 
 const read = readline.createInterface({
   input: process.stdin,
-  output: process.stdout
+  output: process.stdout,
+  terminal: false
 });
 
 read
   .on('line', (line) => {
-    console.log(line.split('').reverse().join(''));
-    console.log();
+    process.stdout.write(line.split('').reverse().join(''));
   })
   .on('close', () => {
-    console.log('Goodbye!');
+    process.stdout.write('Goodbye!');
     process.exit(0);
   })
